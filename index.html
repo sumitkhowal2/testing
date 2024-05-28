@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+
+<body>
+    <div class="container mt-5">
+
+    
+        <div class="navigate-tap d-flex ">
+            <div class="ms-auto">
+                <a href="" class="btn-style"><img src="./images/Sync.svg" alt=""><span
+                        class="ms-2 fw-bold">Sync</span></a>
+            </div>
+            <div class="ms-auto">
+                <label href="" class="btn-style tooltip-menu"><span class="me-1 fw-bold" style="font-size:11pt;">SORT</span><img src="./images/25612.png" width="15px" alt=""></label>
+            </div>
+        </div>
+        <div id="tooltip-menu" class="tooltip-menu">
+            <div class="sort-options">
+                <div class="course-seciton">
+                    <p style="color: #333333; font-size: 10pt;margin:0;">Course</p>
+                    <div class="d-flex justify-content-between">
+                        <button id="course-atoz">A To Z</button>
+                        <button id="course-ztoa">Z To A</button>
+                    </div>
+                </div>
+                <div class="subject-section mb-3">
+                    <p style="color: #4e4e4e; font-size: 10pt;margin:0" class="pt-2">Subject</p>
+                    <div class="d-flex justify-content-between">
+                        <button id="subject-atoz">A To Z</button>
+                        <button id="subject-ztoa">Z To A</button>
+                    </div>
+                </div>
+                <hr style="border-top: 1px solid rgb(80 79 79) !important;opacity: 0.75 !important;">
+                <a href=""><button style="background-color: #FEEC00;width:100%;border: none;color:#000000;font-weight: 600;">Apply</button></a>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+        <div class="link-tap mt-4">
+            <div class="row g-4">
+                <div class="col-lg-3 col-6">
+                    <div class="pdf_content" id="togglePdf">
+                        <div class="text_bg_center">
+                            <img src="./images/blue_pdf.svg" alt="">
+                            <div class="mt-4 ms-2">
+                                <h6 class="">PDFs</h6>
+                                <p style="font-size: 11px;">5 PDFs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="notes_content" id="toggleNotes">
+                        <div class="text_bg_center" >
+                            <img src="./images/green_notes.svg" alt="">
+                            <div class="mt-4 ms-2">
+                                <h6 class="">Notes</h6>
+                                <p style="font-size: 11px;">10 Notes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="quize_content" id="toggleQuizzes">
+                        <div class="text_bg_center">
+                            <img src="./images/yellow_timer.svg" width="35px" alt="">
+                            <div class="mt-4 ms-2">
+                                <h6 class="">Quizzes</h6>
+                                <p style="font-size: 11px;">5 Quizzes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="question_content" id="toggleQuestions">
+                        <div class="text_bg_center">
+                            <img src="./images/orange_question.svg" style="margin: -8px 0 0 0;" alt="">
+                            <div class="mt-4 ms-2">
+                                <h6 class="">Questions</h6>
+                                <p style="font-size: 11px;">5 Questions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 1px solid black !important;opacity: 0.75 !important;">
+        <div>
+            <h6>Recently Saved</h6>
+        </div>
+
+
+
+        <div class="all-saved-item target-section" id="allSavedItemSection">
+            <!-- Default Content -->
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/pdf.svg" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                            महत्वपूर्ण
+                            बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                            महत्वपूर्ण बिंदु</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Read</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Notes-1.svg" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                            महत्वपूर्ण
+                            बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                            महत्वपूर्ण बिंदु</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Read</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="target-section" id="pdfSection">
+            <div class="pdf-section" id="contentDiv">
+                <!-- PDF Content -->
+                <!-- Your PDF content here -->
+                <div class="content mt-4">
+                    <div class="content-image">
+                        <img src="./images/pdf.svg" alt="Notes">
+                    </div>
+                    <div class="content-text ms-3 flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण
+                                बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण बिंदु</h6>
+                            <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                        </div>
+                        <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="content-button">
+                                <a href="#"><span>Read</span></a>
+                                <a href="#"><span>Share</span></a>
+                            </div>
+                            <div class="content-date ms-auto">
+                                <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="content mt-4">
+                    <div class="content-image">
+                        <img src="./images/pdf.svg" alt="Notes">
+                    </div>
+                    <div class="content-text ms-3 flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण
+                                बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण बिंदु</h6>
+                            <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                        </div>
+                        <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="content-button">
+                                <a href="#"><span>Read</span></a>
+                                <a href="#"><span>Share</span></a>
+                            </div>
+                            <div class="content-date ms-auto">
+                                <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="content mt-4">
+                    <div class="content-image">
+                        <img src="./images/pdf.svg" alt="Notes">
+                    </div>
+                    <div class="content-text ms-3 flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण
+                                बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण बिंदु</h6>
+                            <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                        </div>
+                        <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="content-button">
+                                <a href="#"><span>Read</span></a>
+                                <a href="#"><span>Share</span></a>
+                            </div>
+                            <div class="content-date ms-auto">
+                                <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="content mt-4">
+                    <div class="content-image">
+                        <img src="./images/pdf.svg" alt="Notes">
+                    </div>
+                    <div class="content-text ms-3 flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h6>This is testing by sumit khowal</h6>
+                            <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                        </div>
+                        <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="content-button">
+                                <a href="#"><span>Read</span></a>
+                                <a href="#"><span>Share</span></a>
+                            </div>
+                            <div class="content-date ms-auto">
+                                <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="content mt-4">
+                    <div class="content-image">
+                        <img src="./images/pdf.svg" alt="Notes">
+                    </div>
+                    <div class="content-text ms-3 flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण
+                                बिंदु Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                                महत्वपूर्ण बिंदु</h6>
+                            <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                        </div>
+                        <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="content-button">
+                                <a href="#"><span>Read</span></a>
+                                <a href="#"><span>Share</span></a>
+                            </div>
+                            <div class="content-date ms-auto">
+                                <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-section" id="notesSection">
+            <!-- Notes Content -->
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Notes-1.svg" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>This is testing by sumit khowal</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Read</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Notes-1.svg" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>This is testing by sumit khowal</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Read</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Notes-1.svg" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>Part-1 || पर्यावरण (Environment) महत्वपूर्ण बिंदु Part-1 || पर्यावरण (Environment)
+                            महत्वपूर्ण बिंदु Part-1 ||</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Read</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="target-section" id="quizzesSection">
+            <!-- Quizzes Content -->
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Timer-1.png" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>This is testing by sumit khowal</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Attempt</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+         <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Timer-1.png" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6>This is testing by sumit khowal</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <h6 class="py-2 text-muted">RAS Mains E-Book 2023 RAS Mains E-Bookings</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-button">
+                            <a href="#"><span>Attempt</span></a>
+                            <a href="#"><span>Share</span></a>
+                        </div>
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-section" id="questionsSection">
+            <!-- Questions Content -->
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Question.png" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="lh-lg-base" style="font-size: 12pt;">Below are given letteRs. and their numeric
+                            codes.
+                            Below that are given some conditions to be followed while codifying the given letter groups
+                            in
+                            each question. Study them and find out the correct numeric coded form of the given letter
+                            group
+                            in each question. If none of the coded form s is correct, your answer will be e. i.e., 'None
+                            of
+                            these'.</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="content mt-4">
+                <div class="content-image">
+                    <img src="./images/Question.png" alt="Notes">
+                </div>
+                <div class="content-text ms-3 flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="lh-lg-base" style="font-size: 12pt;">Below are given letteRs. and their numeric
+                            codes.
+                            Below that are given some conditions to be followed while codifying the given letter groups
+                            in
+                            each question. Study them and find out the correct numeric coded form of the given letter
+                            group
+                            in each question. If none of the coded form s is correct, your answer will be e. i.e., 'None
+                            of
+                            these'.</h6>
+                        <a href=""><img src="./images/three-dots-20.png" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                        <div class="content-date ms-auto">
+                            <p style="font-size: 12pt;margin-right: 8px;">12/12/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.target-section');
+            sections.forEach(section => {
+                section.style.display = section.id === sectionId ? 'block' : 'none';
+            });
+        }
+
+        document.getElementById('togglePdf').addEventListener('click', () => showSection('pdfSection'));
+        document.getElementById('toggleNotes').addEventListener('click', () => showSection('notesSection'));
+        document.getElementById('toggleQuizzes').addEventListener('click', () => showSection('quizzesSection'));
+        document.getElementById('toggleQuestions').addEventListener('click', () => showSection('questionsSection'));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176" height="86" viewBox="0 0 176 86">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.418" y1="0.5" x2="0.915" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcf1b7"/>
+      <stop offset="1" stop-color="#fee562"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_418" data-name="Rectangle 418" width="176" height="86" rx="13" opacity="0.62" fill="url(#linear-gradient)"/>
+</svg>
